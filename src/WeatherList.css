@@ -1,0 +1,32 @@
+.weather {
+    height: 700px;
+    width: 500px;
+    border: 3px solid gray;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+.wea {
+    margin-top: 7px;
+}
+
+.wea_city {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.wea_illu {
+    display: flex;
+    justify-content: center;
+}
+
+.wea_desc {
+    position: relative;
+    top: -30px;
+    text-align: center;
+}
+
+.form-control {
+    width: 70% !important; 
+    margin: 0 auto;
+}
