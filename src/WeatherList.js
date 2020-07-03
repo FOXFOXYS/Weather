@@ -24,20 +24,8 @@ class WeatherList extends Component {
             name: this.state.name
         })
     }
-
-
-    // componentDidMount() {
-    //     axios.get('https://api.openweathermap.org/data/2.5/forecast?q='+this.state.name+'&lang=fr&units=metric&appid='+this.state.appkey)
-    //     .then(res => {
-    //         console.log(res.data)
-    //         this.setState({
-    //             periods: res.data.list,
-    //         })
-    //     })
-    // }
-
-    render() { 
-
+    
+    componentDidMount() {
         axios.get('https://api.openweathermap.org/data/2.5/forecast?q='+this.state.name+'&lang=fr&units=metric&appid='+this.state.appkey)
         .then(res => {
             console.log(res.data)
@@ -45,6 +33,19 @@ class WeatherList extends Component {
                 periods: res.data.list,
             })
         })
+    }
+
+    componentDidUpdate() {
+        axios.get('https://api.openweathermap.org/data/2.5/forecast?q='+this.state.name+'&lang=fr&units=metric&appid='+this.state.appkey)
+        .then(res => {
+            console.log(res.data)
+            this.setState({
+                periods: res.data.list,
+            })
+        })
+    }
+
+    render() { 
         
         let meteos = this.state.periods.slice(0,4).map(period => {
             return <Weather period={period}/>
