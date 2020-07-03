@@ -9,7 +9,7 @@ class Weather extends Component {
         let icon = ('http://openweathermap.org/img/wn/'+weath.weather[0].icon+'@2x.png');
 
         return ( 
-            <div>
+            <div className="weathers">
                 <div className="wea_illu">
                     <img className="wea_images" src={icon} alt="weather image"/>
                 </div>
@@ -17,7 +17,6 @@ class Weather extends Component {
                     <small>{weath.dt_txt}</small> <br/>
                     <small>{weath.main.temp}°</small> <br/>
                     <small>{weath.weather[0].description}</small>
-
                 </div>
             </div>
         );

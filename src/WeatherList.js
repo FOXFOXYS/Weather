@@ -52,7 +52,16 @@ class WeatherList extends Component {
                 <div className="wea_city">
                     <h1>{this.state.name}</h1>
                 </div>
-                {meteos}
+                <div className="margin row mx-md-n1">
+                 {meteos}
+                </div>
+                <div className="pub">
+                    <div className="pub_content">
+                    </div>
+                </div>
+                <div className="button">
+                    <i class="fas fa-chevron-circle-left fa-3x"></i> <i class="fab fa-chrome fa-3x"></i>
+                </div>
             </div>
         );
     }

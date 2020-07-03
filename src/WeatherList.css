@@ -20,6 +20,29 @@
     justify-content: center;
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button i {
+    margin: 0 15px;
+}
+
+.pub_content {
+    width: 100%;
+    height: 100px;
+}
+
+.margin {
+    margin-top: 50px;
+}
+
+.weathers {
+    width: 50%;
+    display: block;
+}
+
 .wea_desc {
     position: relative;
     top: -30px;
