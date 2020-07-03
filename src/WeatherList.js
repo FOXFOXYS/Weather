@@ -7,7 +7,7 @@ import Weather from './Weather';
 class WeatherList extends Component {
     state = { 
         appkey: "14bcf82a4395129027b7b7a341b60cad",
-        name: "",
+        name: "lens",
         periods: [],
     }
 
